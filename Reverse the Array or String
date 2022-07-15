@@ -1,0 +1,33 @@
+!DOCTYPE html
+<html>
+    <head>
+        <title>450Questions</title>
+        <script>
+        var n = parseInt(prompt("Press 1 if you want to enter an array and 2 if you want to enter a string"));
+            if(n===1){
+                var n = prompt("Please enter the number of elements in your array");
+                var a = new Array();
+                for(i=0; i<n; i++){
+                    var j = window.prompt("Enter your element");
+                    a.push(j);
+                }
+                a.reverse();
+                console.log(a);
+            }
+            else if(n===2){
+                var s = window.prompt("Please enter your string");
+                s1 = "";
+                for(i = s.length-1; i>=0; i--){
+                    s1+=s[i];
+                }
+                console.log(s1);
+            }
+            else{
+                console.log("Please enter a valid number");
+            }
+            </script>
+    </head>
+    <body>
+
+    </body>
+</html>
